@@ -1,0 +1,25 @@
+buildscript {
+  repositories {
+    jcenter()
+	maven {
+		url  "https://dl.bintray.com/prestonmcgowan/maven"
+	}
+  }
+  dependencies {
+    classpath "com.marklogic:marklogic-geo-data-services-modules:0.0.3"
+  }
+}
+plugins {
+  id "net.saliman.properties" version "1.4.6"
+  id "com.marklogic.ml-gradle" version "3.13.0"
+}
+repositories {
+  jcenter()
+	maven {
+		url  "https://dl.bintray.com/prestonmcgowan/maven"
+	}
+}
+  
+dependencies {
+  mlBundle "com.marklogic:marklogic-geo-data-services-modules:0.0.3"
+}
